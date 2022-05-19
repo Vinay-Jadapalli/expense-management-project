@@ -3,11 +3,11 @@ import * as Icon from 'react-feather';
 const SidebarData = [
   { caption: 'Home' },
   {
-    title: 'Employee',
+    title: 'Dashboard',
     href: '/dashboards',
     id: 1,
     suffix: '4',
-    suffixColor: 'bg-info text-dark-white',
+    suffixColor: 'bg-info text-dark-secondary',
     icon: <Icon.Home />,
     collapisble: false,
     children: [

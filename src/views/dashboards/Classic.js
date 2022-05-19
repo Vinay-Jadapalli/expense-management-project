@@ -2,7 +2,7 @@ import React from 'react'
 
 const Classic = () => {
   return (
-    <h1>dashboard</h1>
+    <h1>Dashboard of Expense Management</h1>
   );
 };
 

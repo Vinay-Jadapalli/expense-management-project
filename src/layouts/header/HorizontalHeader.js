@@ -19,7 +19,7 @@ import user1 from '../../assets/images/users/user1.jpg';
 import { ToggleMobileSidebar } from '../../store/customizer/CustomizerSlice';
 import ProfileDD from './ProfileDD';
 
-import HorizontalLogo from '../logo/HorizontalLogo';
+// import HorizontalLogo from '../logo/HorizontalLogo';
 
 const HorizontalHeader = () => {
   const isDarkMode = useSelector((state) => state.customizer.isDark);
@@ -40,7 +40,7 @@ const HorizontalHeader = () => {
         {/**********Logo**********/}
         {/******************************/}
         <div className="pe-4 py-3 ">
-          <HorizontalLogo />
+          {/* <HorizontalLogo /> */}
         </div>
         {/******************************/}
         {/**********Toggle Buttons**********/}
