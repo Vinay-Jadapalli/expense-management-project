@@ -362,6 +362,11 @@ const CustomReactTable = () => {
           }}
           className="-striped -highlight"
         />
+
+
+
+
+        
       </ComponentCard> */}
       {/*--------------------------------------------------------------------------------*/}
       {/* End fixed header-footer table*/}

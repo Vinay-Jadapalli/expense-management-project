@@ -23,6 +23,7 @@ const ThemeRoutes = [
         name: 'react-table',
         exact: true,
         element: <CustomReactTable />,
+        
       },
     
     ],
