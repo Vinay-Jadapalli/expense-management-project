@@ -6,8 +6,6 @@ const SidebarData = [
     title: 'Dashboard',
     href: '/dashboards',
     id: 1,
-    suffix: '4',
-    suffixColor: 'bg-info text-dark-secondary',
     icon: <Icon.Home />,
     collapisble: false,
     children: [
@@ -19,8 +17,8 @@ const SidebarData = [
         collapisble: false,
       },
       // {
-      //   title: 'Crypto',
-      //   href: '/dashboards/crypto',
+      //   title: 'Line',
+      //   href: '/dashboards/Line',
       //   icon: <Icon.Disc />,
       //   id: 1.2,
       //   collapisble: false,
@@ -328,13 +326,13 @@ const SidebarData = [
   //   id: 4.1,
   //   collapisble: false,
   // },
-  // {
-  //   title: 'React Table',
-  //   href: '/tables/react-table',
-  //   icon: <Icon.Disc />,
-  //   id: 4.2,
-  //   collapisble: false,
-  // },
+  {
+    title: 'React Table',
+    href: '/tables/react-table',
+    icon: <Icon.Disc />,
+    id: 4.2,
+    collapisble: false,
+  },
   // {
   //   title: 'Bootstrap Datatable',
   //   href: '/tables/data-table',

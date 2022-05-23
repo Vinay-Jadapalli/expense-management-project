@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 import {
   Navbar,
-  Nav,
-  NavItem,
   NavbarBrand,
   UncontrolledDropdown,
   DropdownToggle,
@@ -13,10 +11,10 @@ import {
   DropdownItem,
   Button,
 } from 'reactstrap';
-import { MessageSquare } from 'react-feather';
+// import { MessageSquare } from 'react-feather';
 import * as Icon from 'react-feather';
 import { ReactComponent as LogoWhite } from '../../assets/images/logos/xtreme-white-icon.svg';
-import MessageDD from './MessageDD';
+// import MessageDD from './MessageDD';
 import NotificationDD from './NotificationDD';
 import user1 from '../../assets/images/users/user1.jpg';
 
@@ -45,7 +43,7 @@ const Header = () => {
           className="d-none d-lg-block"
           onClick={() => dispatch(ToggleMiniSidebar())}
         >
-          <i className="bi bi-list" />
+          {/* <i className="bi bi-list" /> */}
         </Button>
         <NavbarBrand href="/" className="d-sm-block d-lg-none">
           <LogoWhite />
@@ -55,7 +53,7 @@ const Header = () => {
           className="d-sm-block d-lg-none"
           onClick={() => dispatch(ToggleMobileSidebar())}
         >
-          <i className="bi bi-list" />
+          {/* <i className="bi bi-list" /> */}
         </Button>
       </div>
 
@@ -63,29 +61,19 @@ const Header = () => {
       {/**********Left Nav Bar**********/}
       {/******************************/}
 
-      <Nav className="me-auto d-none d-lg-flex" navbar>
-        {/* <NavItem>
+      {/* <Nav className="me-auto d-none d-lg-flex" navbar>
+        <NavItem>
           <Link to="/starter" className="nav-link">
             Starter
           </Link>
-        </NavItem> */}
+        </NavItem>
         <NavItem>
           <Link to="/about" className="nav-link">
             About
           </Link>
         </NavItem>
-        <UncontrolledDropdown inNavbar nav>
-          <DropdownToggle caret nav>
-            Create
-          </DropdownToggle>
-          <DropdownMenu end>
-            <DropdownItem>Option 1</DropdownItem>
-            <DropdownItem>Option 2</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem>Reset</DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-      </Nav>
+      </Nav> */}
+
       {/******************************/}
       {/**********Notification DD**********/}
       {/******************************/}
@@ -114,7 +102,7 @@ const Header = () => {
         {/**********Message DD**********/}
         {/******************************/}
         <UncontrolledDropdown className="mx-1">
-          <DropdownToggle color={topbarColor}>
+          {/* <DropdownToggle color={topbarColor}>
             <MessageSquare size={18} />
           </DropdownToggle>
           <DropdownMenu className="ddWidth">
@@ -131,7 +119,7 @@ const Header = () => {
                 Check All
               </Button>
             </div>
-          </DropdownMenu>
+          </DropdownMenu> */}
         </UncontrolledDropdown>
         {/******************************/}
         {/**********Profile DD**********/}

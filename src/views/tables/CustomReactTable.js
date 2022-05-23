@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactTable from 'react-table-v6';
-import treeTableHOC from 'react-table-v6/lib/hoc/treeTable';
+// import treeTableHOC from 'react-table-v6/lib/hoc/treeTable';
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
 import 'react-table-v6/react-table.css';
 import * as data from './ReacTableData';
@@ -8,14 +8,14 @@ import BreadCrumbs from '../../layouts/breadcrumbs/BreadCrumbs';
 
 import ComponentCard from '../../components/ComponentCard';
 
-const TreeTable = treeTableHOC(ReactTable);
+// const TreeTable = treeTableHOC(ReactTable);
 
 const CustomReactTable = () => {
   const [modal, setModal] = useState(false);
   const [obj, setObj] = useState({});
   const [jsonData, setJsonData] = useState(data.dataTable);
-  const data3 = data.makeData();
-  const { treedata } = data;
+  // const data3 = data.makeData();
+  // const { treedata } = data;
 
   const toggle = () => {
     setModal(!modal);
@@ -127,7 +127,7 @@ const CustomReactTable = () => {
       {/*--------------------------------------------------------------------------------*/}
       {/* Start Inner Div*/}
       {/*--------------------------------------------------------------------------------*/}
-      <ComponentCard title="Basic Table">
+      {/* <ComponentCard title="Basic Table">
         <ReactTable
           data={data3}
           columns={[
@@ -171,32 +171,49 @@ const CustomReactTable = () => {
           defaultPageSize={10}
           className="-striped -highlight"
         />
-      </ComponentCard>
+      </ComponentCard> */}
       {/*--------------------------------------------------------------------------------*/}
       {/*End Inner Div*/}
       {/*--------------------------------------------------------------------------------*/}
       {/*--------------------------------------------------------------------------------*/}
       {/* Start Action table*/}
       {/*--------------------------------------------------------------------------------*/}
-      <ComponentCard title="Action Table">
+      <ComponentCard title="Line Details">
         <ReactTable
           columns={[
             {
-              Header: 'FirstName',
+              Header: 'Line Number',
               accessor: 'name',
             },
             {
-              Header: 'Designation',
+              Header: 'Date',
               accessor: 'designation',
             },
             {
-              Header: 'Location',
+              Header: 'Project code',
               accessor: 'location',
             },
             {
-              Header: 'Age',
+              Header: 'Expense Type',
               accessor: 'age',
             },
+            {
+              Header: 'Invoice Number',
+              accessor: 'age',
+            },
+            {
+              Header: 'Description ',
+              accessor: 'age',
+            },
+            {
+              Header: 'Claim Amount',
+              accessor: 'age',
+            },
+            {
+              Header: 'Attachment',
+              accessor: 'file',
+            },
+           
             {
               Header: 'Actions',
               accessor: 'actions',
@@ -217,7 +234,7 @@ const CustomReactTable = () => {
       {/*--------------------------------------------------------------------------------*/}
       {/* Tree table*/}
       {/*--------------------------------------------------------------------------------*/}
-      <ComponentCard title="Tree Table">
+      {/* <ComponentCard title="Tree Table">
         <TreeTable
           filterable
           defaultFilterMethod={(filter, row) => {
@@ -304,14 +321,14 @@ const CustomReactTable = () => {
             );
           }}
         />
-      </ComponentCard>
+      </ComponentCard> */}
       {/*--------------------------------------------------------------------------------*/}
       {/* End Tree table*/}
       {/*--------------------------------------------------------------------------------*/}
       {/*--------------------------------------------------------------------------------*/}
       {/* Fixed header-footer table*/}
       {/*--------------------------------------------------------------------------------*/}
-      <ComponentCard title="Fixed Table">
+      {/* <ComponentCard title="Fixed Table">
         <ReactTable
           data={data3}
           columns={[
@@ -345,7 +362,7 @@ const CustomReactTable = () => {
           }}
           className="-striped -highlight"
         />
-      </ComponentCard>
+      </ComponentCard> */}
       {/*--------------------------------------------------------------------------------*/}
       {/* End fixed header-footer table*/}
       {/*--------------------------------------------------------------------------------*/}
