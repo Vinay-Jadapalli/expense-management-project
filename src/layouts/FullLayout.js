@@ -17,7 +17,7 @@ const FullLayout = () => {
   return (
     <main>
       <div
-        className={`pageWrapper d-md-block d-lg-flex ${toggleMiniSidebar ? 'isMiniSidebar' : ''}`}
+        className={`pageWrapper d-md-block d-lg-flex ${toggleMiniSidebar ? 'isMiniSidebar' : 'isMiniSidebar'}`}
       >
         {/******** Sidebar **********/}
         {LayoutHorizontal ? (

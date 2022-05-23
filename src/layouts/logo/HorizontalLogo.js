@@ -16,7 +16,7 @@ const HorizontalLogo = () => {
           <LogoWhiteIcon />
           <LogoWhiteText className="d-none d-lg-block" />
         </>
-      ) : (
+      ) : ( 
         <>
           <LogoDarkIcon />
           <LogoDarkText className="d-none d-lg-block" />
